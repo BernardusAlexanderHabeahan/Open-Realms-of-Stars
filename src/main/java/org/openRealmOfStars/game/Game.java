@@ -314,7 +314,7 @@ public class Game implements ActionListener {
       gameFrame.setTitle(GAME_TITLE + " " + GAME_VERSION);
       gameFrame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
       gameFrame.addWindowListener(new GameWindowListener());
-      gameFrame.setSize(WINDOW_X_SIZE, WINDOW_Y_SIZE);
+      gameFrame.setSize(WINDOW_X_SIZE, WINDOW_Y_SIZE + 26);
       gameFrame.setLocationRelativeTo(null);
       animationTimer = new Timer(ANIMATION_TIMER_DELAY, this);
       animationTimer.setActionCommand(GameCommands.COMMAND_ANIMATION_TIMER);
